@@ -400,9 +400,8 @@ def records():
         page, volunteers=volunteers, donations=donations, messages=messages
     )
 
+create_tables()
 
 if __name__ == "__main__":
-    create_tables()
     print("Helping Hands Foundation is starting...")
-    print("Open http://127.0.0.1:5000 in your browser.")
     app.run(debug=True)
